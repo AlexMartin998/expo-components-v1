@@ -1,22 +1,43 @@
 import { useState } from 'react';
 
 import ThemedCard from '@/presentation/shared/ThemedCard';
+import ThemedSwitch from '@/presentation/shared/ThemedSwitch';
 import ThemedView from '@/presentation/shared/ThemedView';
-import { Switch } from 'react-native';
 
 const Switches = () => {
-  const [isEnabled, setIsEnabled] = useState(false);
-  const toggleSwitch = () => setIsEnabled(previousState => !previousState);
+  const [state, setState] = useState({
+    isActive: true,
+    isHungry: false,
+    isHappy: true,
+  });
 
   return (
     <ThemedView useMargin>
       <ThemedCard>
-        <Switch
-          trackColor={{ false: '#767577', true: '#81b0ff' }}
-          thumbColor={isEnabled ? '#f5dd4b' : '#f4f3f4'}
-          ios_backgroundColor="#3e3e3e"
-          onValueChange={toggleSwitch}
-          value={isEnabled}
+        <ThemedSwitch
+          text="Enable Notifications"
+          value={state.isActive}
+          onValueChange={value =>
+            setState(prev => ({ ...prev, isActive: value }))
+          }
+          className="mb-2"
+        />
+
+        <ThemedSwitch
+          text="I am Hungry"
+          value={state.isHungry}
+          onValueChange={value =>
+            setState(prev => ({ ...prev, isHungry: value }))
+          }
+          className="mb-2"
+        />
+
+        <ThemedSwitch
+          text="I am Happy"
+          value={state.isHappy}
+          onValueChange={value =>
+            setState(prev => ({ ...prev, isHappy: value }))
+          }
         />
       </ThemedCard>
     </ThemedView>
