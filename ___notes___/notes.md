@@ -140,68 +140,7 @@ import './../global.css';
 
 
 
-## TMDB
-- --- Crear cuenta para q en permfil obtengamos el API KEY
-
-
-
-
-
-### APIS
-- --- Podemos usar TanStack Query con Axios, lo que nos facilita la vida xq es literal como React
-```sh
-pnpm add axios
-```
-
-- --- `TanStack Query`:
-```sh
-pnpm add @tanstack/react-query
-```
-
-- -- `Providers` en React Native:
-- En el punto mas alto, q como es con el `/app` directori como en Next.js, pues iria en el Main Layout
-
-
-
-
-- -- `Slider`:
-  - run: `pnpm add react-native-reanimated-carousel`
-
-
-
-
-
-
-
-
-
-
-#### Infinite Scroll & Navigation
-- --- Fin de un scroll en el FlatList para el infinite scroll
-  - -- Con tanStackQuery facil
-
-
-
-- --- Gradient:
-  - -- run `pnpm add expo-linear-gradient`
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+## Animations
+- --- Se lo tiene con la doc
+  - -- s
 

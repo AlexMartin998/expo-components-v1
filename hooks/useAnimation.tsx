@@ -56,11 +56,10 @@ export const useAnimation = () => {
   };
 
   const startMovingDownPosition = ({
-    initialPosition = 0,
     duration = 500,
-    toValue = 100,
+    toValue = -100,
     useNativeDriver = true,
-    easing = Easing.bounce,
+    easing = undefined,
     callback = () => {},
   } = {}) => {
     Animated.timing(animatedTop, {
