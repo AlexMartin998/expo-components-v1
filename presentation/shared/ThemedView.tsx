@@ -35,7 +35,8 @@ const ThemedView = ({
           backgroundColor: backgroundColor,
           flex: 1,
           paddingTop: useSafeArea ? safeArea.top : 0,
-          marginHorizontal: useMargin ? 10 : 0,
+          // marginHorizontal: useMargin ? 10 : 0,
+          paddingHorizontal: useMargin ? 10 : 0,
         },
       ]}
       className={className}
