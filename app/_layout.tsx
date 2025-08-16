@@ -7,10 +7,10 @@ import { useFonts } from 'expo-font';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import 'react-native-reanimated';
 
+import { allRoutes } from '@/constants/Routes';
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { useThemeColor } from '@/hooks/useThemeColor';
-import ThemedText from '@/presentation/shared/ThemedText';
-import ThemedView from '@/presentation/shared/ThemedView';
+import { Stack } from 'expo-router';
 import './../global.css';
 
 export default function RootLayout() {
@@ -32,9 +32,32 @@ export default function RootLayout() {
       style={{ backgroundColor: backgroundColor, flex: 1 }} // upd bg color with useThemeColor
     >
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-        <ThemedView useMargin>
-          <ThemedText type="h1">Welcome to the App!</ThemedText>
-        </ThemedView>
+        {/* ------ Router ------- */}
+        <Stack
+          screenOptions={{
+            headerShadowVisible: false,
+            headerStyle: {
+              backgroundColor,
+            },
+          }}
+        >
+          <Stack.Screen
+            name="index"
+            options={{
+              title: '',
+            }}
+          />
+
+          {allRoutes.map(route => (
+            <Stack.Screen
+              key={route.name}
+              name={route.name}
+              options={{
+                title: route.title,
+              }}
+            />
+          ))}
+        </Stack>
       </ThemeProvider>
     </GestureHandlerRootView>
   );
