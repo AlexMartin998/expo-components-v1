@@ -15,7 +15,7 @@ const ThemedView = ({
   style,
   className,
   useMargin = false,
-  useSafeArea = false,
+  useSafeArea = true,
   bgColor,
   children,
   ...props

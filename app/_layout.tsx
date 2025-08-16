@@ -9,8 +9,8 @@ import 'react-native-reanimated';
 
 import { useColorScheme } from '@/hooks/useColorScheme';
 import { useThemeColor } from '@/hooks/useThemeColor';
+import ThemedText from '@/presentation/shared/ThemedText';
 import ThemedView from '@/presentation/shared/ThemedView';
-import { Text } from 'react-native';
 import './../global.css';
 
 export default function RootLayout() {
@@ -33,9 +33,7 @@ export default function RootLayout() {
     >
       <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
         <ThemedView useMargin>
-          <Text className="mt-10 text-3xl text-light-text dark:text-dark-text">
-            Hello
-          </Text>
+          <ThemedText type="h1">Welcome to the App!</ThemedText>
         </ThemedView>
       </ThemeProvider>
     </GestureHandlerRootView>
