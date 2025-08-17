@@ -170,13 +170,32 @@ import './../global.css';
 - --- Guia en la docs, requiere una estructura de directorios especifica;:
 ```sh
 # https://docs.expo.dev/router/advanced/modals/
+# https://docs.expo.dev/tutorial/create-a-modal/
 app/
   - _layout.tsx
   - index.tsx
   - modal.tsx
 ```
 
-- s
+- Estos estan atados a rutas de expo, entonces hay otras formas tb donde es parcial o incluso vi una libraria 
+- `react-native-modal` con soporte a ts
+
+
+
+
+
+
+
+
+## Infinite Scroll
+- --- Se lo puede conseguir con un `FlatList`
+  - -- s
+
+
+
+
+
+
 
 
 
