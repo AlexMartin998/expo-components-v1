@@ -142,5 +142,22 @@ import './../global.css';
 
 ## Animations
 - --- Se lo tiene con la doc
-  - -- s
+  - -- Y debemos usar el `<Animated.View></Animated.View>`
+
+
+
+
+
+
+
+## Pull Refresh
+- -- Debe estar dentro de un view q permita scroll como el `ScrollView`
+  - - Q da acceso al `refreshControl` donde se orquesta y configura todo
+
+
+
+
+
+
+
 
