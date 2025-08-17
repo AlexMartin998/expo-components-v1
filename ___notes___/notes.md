@@ -159,7 +159,29 @@ import './../global.css';
 
 
 ## Section List
-- -- S
+- -- Podemos controlar lo que necesitemos en el component especifico, modificar comportamientos, etc.
+
+
+
+
+
+
+## Modals
+- --- Guia en la docs, requiere una estructura de directorios especifica;:
+```sh
+# https://docs.expo.dev/router/advanced/modals/
+app/
+  - _layout.tsx
+  - index.tsx
+  - modal.tsx
+```
+
+- s
+
+
+
+
+
 
 
 
