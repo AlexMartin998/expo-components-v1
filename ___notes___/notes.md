@@ -201,6 +201,69 @@ app/
 
 
 
+## Carruser Controlado para Slides
+- --- Se lo hace con un `FlatList`
+  - -- s
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
